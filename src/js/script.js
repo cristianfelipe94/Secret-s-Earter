@@ -37,7 +37,8 @@ retrieveSecrets.addEventListener('click', function () {
       const secretListItem = document.createElement('li');
       const secretListBtn = document.createElement('input');
       const secretListWrapper = document.createElement('div');
-      secretListBtn.setAttribute('type', 'submit')
+      secretListBtn.setAttribute('type', 'submit');
+      secretListBtn.setAttribute('value', 'Borrar');
 
       // Attribute Data, to create Index Numbers to regular elements.
       secretListBtn.setAttribute('data-indexOf', indexCounter);
