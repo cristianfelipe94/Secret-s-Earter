@@ -17,8 +17,6 @@ secretsBtn.addEventListener('click', function () {
     const secretAnswArrayResp = JSON.parse(localStorage.getItem('newSecretArray'));
     console.log(secretAnswArrayResp);
     secretsBar.value = '';
-  } else {
-    console.log('No information.');
   }
 });
 
@@ -55,13 +53,17 @@ retrieveSecrets.addEventListener('click', function () {
 
       // Function will live in every Btn.
       secretListBtn.addEventListener('click', function(e) {
+
+        // Save the Index Number where the Function it´s been triggered.
         const elementIndexNumb = e.target.getAttribute('data-indexOf', indexCounter);
-        console.log(elementIndexNumb);
+
+        // Remove Element from Array using Index Number.
+        // From 'IndexNumb' to 1.
         secretAnswArray.splice(elementIndexNumb, 1);
+
+        // Convert response to Json.
         localStorage.setItem('newSecretArray', JSON.stringify(secretAnswArray));
         const secretAnswArrayResp = JSON.parse(localStorage.getItem('newSecretArray'));
-        console.log(secretAnswArrayResp);
-        console.log('removing');
       });
     });
   }
