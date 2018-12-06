@@ -1,3 +1,76 @@
 
 
 /*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+background-color:  rgb(9, 56, 75) }
+h1{
+  text-align: center;
+  color: white;
+  margin-bottom:30px ;
+}
+.mainWrapper {
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid white;
+  padding-bottom: 60px;
+  ; }
+
+.mainWrapper #secretsBar {
+  padding-top: 30px;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.mainWrapper input[type='text'] {
+  width: 49%;
+  text-align: center;
+  height:40px;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 2%;
+color: rgb(63, 1, 24) }
+
+.mainWrapper input[type='submit'] {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5%;
+  color: rgb(63, 1, 24) }
+#secretList{
+
+  text-align: center;
+  padding-top: 30px ;
+}
+input[type='submit']{
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5%;
+color: rgb(63, 1, 24) }
+div{
+  margin-bottom: 20px;
+}
+ul{
+  list-style: none;
+}
+li{
+  color:  white;
+  font-size: 14px;
+  font-size: 18px;
+}
